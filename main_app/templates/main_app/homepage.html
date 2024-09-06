@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+    *{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    image-rendering: auto;
+    scroll-behavior: smooth;
+    }   
+    button{
+        cursor: pointer;
+        user-select: none;
+    }
+    /* HEADER */
+    .phone_button{
+        display: flex;
+        border: none;
+        margin-left: 5%;
+        margin-right: 1%;
+    }
+    .button_menu_group{
+        background-color: #0014a8;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .btn_text{
+        justify-content: center;
+        background-color: #0014a8;
+        color: white;
+        font-size: 130%;
+        border: none;
+        height: 80px;
+    }
+    .inner_button_menu_group{
+        width: 100%;
+        background-color: #0014a8;
+        height: 50px;
+    }
+    .cap_text{
+        display: flexbox;
+        width: auto;
+        margin: auto;
+        white-space: nowrap;
+        margin-left: 8%;
+        font-size: 120%;
+    }
+    .head_text{
+        white-space: nowrap;
+        color: #1C1C1C;
+        margin-left: 5%;
+    }
+    .btn_header{
+        display: block;
+        margin: auto;
+    }
+    /* HEADER */
+    /* FOOTER */
+    .footer_txt{
+        display: flex;
+        background-color: #0014a8;
+        color: #eeeeee;
+        border: none;
+    }
+    .footer_section{
+        display: flex;
+        background-color: #0014a8;
+        height: 120px;
+        width: 100%;
+        border-color: #0014a8;
+    }
+    .footer_button{
+        background-color: #0014a8; 
+        border: none;
+        margin: auto;
+    }
+    .policy_text{
+        background-color: #0014a8;
+        color: #eeeeee;
+    }
+    .policy{
+        background-color: #0014a8;
+        height: 80px;
+        width: auto;
+    }
+    /* FOOTER */
+    /* BODY */
+    .first_body_block{
+        display: flex;
+        width: 90%;
+        padding: 5%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn_get_help{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background-color: #0014a8;
+        color: #eeeeee;
+        justify-content: right;
+        font-size: 150%;
+    }
+    .txt_first_body_block{
+        display: block;
+        margin-right: 20%;
+        width: 40%;
+    }
+    .price_list{
+        display: flexbox;
+        width: 100%;
+        justify-content: center;
+    }
+    .body_desription{
+        font-size: 130%;
+    }
+    .menu_services{
+        white-space: nowrap;
+        width: 50%;
+    }
+    .menu_price{
+        display: flex;
+        white-space: nowrap;
+    }
+    .menu_title{
+        display: flexbox;
+        width: 30%;
+    }
+    .menu_all{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .upper_menu_services{
+        display: flex;
+    }
+    .what_btn{
+        margin: auto;
+        height: 80px;
+        background-color: #0014a8;
+        border: none;
+        color: #eeeeee;
+        font-size: 110%;
+    }
+    .what_menu{
+        display: flex;
+        width: auto;
+        background-color: #0014a8;
+    }
+    li{
+        margin-top: 1%;
+    }
+    ol{
+        margin-top: 1%;
+    }
+    .FAQ_list{
+        display: flex;
+        margin: auto;
+        font-size: 120%;
+        padding: 1%;
+    }
+    #form_to_scroll{
+        display: block;
+    }
+    /* BODY */
+    </style>
+    <title>
+        Оффицальный сайт "МСК-Ритуал", с вами более 25лет
+    </title>
+</head>
+<body>
+<header>
+    <div style="
+        display: flex;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        ">
+        <a href="/" style="
+        display: flexbox;
+        margin-right: 10%;
+        ">
+            <button style="border: none; background-color: white;">
+                <h1 class="head_text">МСК-Ритуал</h1>
+                <p class="head_text">Оффициальный сайт</p>
+            </button>
+        </a>
+        <img src="">
+
+        <span class="cap_text">
+            Организуем похороны в Москве и Московской области
+        </span>
+
+        <u style="
+        border: none;
+        margin-right: 1%;
+        ">
+            <h2>
+                <u style="color: #480607; font-size: 90%;">+7-999-999-99-99</u>
+            </h2>        
+            <p style="color: #1C1C1C;">Телефон горячей линии</p>
+        </u>
+    </div>
+
+    <div class="button_menu_group">
+        <div class="btn_header">
+            <a href="/about" class="inner_button_menu_group">
+                <button class="btn_text"> О компании</button>
+            </a>
+        </div>
+
+        <div class="btn_header">
+            <a href="/rityal_services" class="inner_button_menu_group">
+                <button class="btn_text">Ритуальные услуги</button>
+            </a>
+        </div>
+
+        <div class="btn_header">
+            <a href="/catalog" class="inner_button_menu_group"> 
+                <button class="btn_text">Ритуальные товары</button>
+            </a>
+        </div>
+
+        <div class="btn_header">
+            <a href="/prices" class="inner_button_menu_group">
+                <button class="btn_text">Цены</button>
+            </a>
+        </div>
+
+        <div class="btn_header">
+            <a href="/skidki" class="inner_button_menu_group">
+                <button class="btn_text">Акции и скидки</button>
+            </a>
+        </div>
+
+        <div class="btn_header">
+            <a href="/contacts" class="inner_button_menu_group">
+                <button class="btn_text">Контакты</button>
+            </a>
+        </div>
+    </div>
+    </header>
+<section>
+    <div class="first_body_block">
+        <div class="txt_first_body_block">
+            <div>
+                <h2>Ритуальные услуги в москве</h2>
+            </div>
+        
+            <div>
+                <span class="body_desription">
+                    «МСК - Ритуал» - предоставляет ритуальные услуги, связанные с погребением усопших, комплексный сервис по захоронению и кремированию в Москве и Московской области.
+                </span>
+            </div>
+            
+            <div>
+                <span class="body_desription">
+                    Его главная цель – помочь населению, которое столкнулось с трудностями по причине утраты близких.
+
+                </span>
+            </div>
+            <div>
+                <span class="body_desription">
+                    Воспользовавшись услугами этого центра, гражданин получит официальные ритуальные услуги – организацию похоронной процедуры. Также ритуальная служба «МСК - Ритуал» грамотно и юридически правильно оформляют документы и «справки о смерти», организовывает отпевание и процессом погребения, решает вопросы по отправлению тела скончавшегося в морг, занимается вопросом подготовки прощания, кремирования либо поиском бесплатного места на московском кладбище.
+                </span>
+            </div>
+        </div>
+        <a href="#form_to_scroll">
+            <button class="btn_get_help">Получить помощь</button>
+        </a>
+    </div>
+
+    <div style="display: flexbox;">
+        <div style="
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            width: 100%;
+            ">
+            <span style="font-size: 150%;">Цены на ритуальные услуги - стоимость похорон в Москве</span>
+        </div>
+        <div class="menu_all">
+            <div class="menu_title">
+            <ul>
+                <ol>Комплексный пакет:</ol>
+                <ol>Похороны "Эконом"</ol>
+            </ul>
+            </div>
+            <div class="upper_menu_services">
+                <ul class="menu_services">
+                    <li>Гроб - обитый тканью «Гладь» шелк</li>
+                    <li>Постель в гроб - шелк</li>
+                    <li>Подушка - атлас</li>
+                    <li>Покрывало - атлас церковное</li>
+                    <li>Венок - искуственный Стандарт</li>
+                    <li>Транспорт - морг, кладбище (крематорий)</li>
+                    <li>Доставка в морг</li>
+                    <li>Оформлние заказа на принадлежности</li>
+                    <li>Оформление заказа на транспорт</li>
+                    <li>Сопровождение агентом доставки ритуальных принадлежностей</li>
+                    <li>Организация похорон</li>
+                </ul>
+            </div>
+            <div class="menu_price">
+            <ul>
+                <ol>Стоимость</ol>
+                <ol>27 400* рублей</ol>
+            </ul>
+            </div>
+        </div>
+
+        <div class="menu_all">
+            <div class="menu_title">
+                <ul>
+                    <ol>Комплексный пакет:</ol>
+                    <ol>Похороны Стандарт</ol>
+                </ul>
+            </div>
+            <div class="upper_menu_services">
+                <ul class="menu_services">
+                    <li>Гроб - Обитый тканью «Гладь» атлас</li>
+                    <li>Постель в гроб - атлас</li>
+                    <li>Покрывало - атлас церковное</li>
+                    <li>Венок - искуственный Стандарт</li>
+                    <li>Крест а могилу - металический</li>
+                    <li>Табличка на крест - стандарт</li>
+                    <li>Транспорт - морг, кладбище (крематорий)</li>
+                    <li>Доставка в морг</li>
+                    <li>Оформление заказа на принадлежности</li>
+                    <li>Оформление заказа на транспорт</li>
+                    <li>Сопровождение агентом доставки ритуальных принадлежностей</li>
+                    <li>Организация похорон</li>
+                    <li>Подушка - атлас</li>
+                </ul>
+            </div>
+            <div class="menu_price">
+                <ul>
+                    <ol>Стоимость</ol>
+                    <ol>36 540* рублей</ol>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu_all">
+            <div class="menu_title">
+                <ul>
+                    <ol>Комплексный пакет:</ol>
+                    <ol>Похороны элит</ol>
+                </ul>
+            </div>
+            <div class="upper_menu_services">
+                <ul class="menu_services">
+                    <li>Гроб - деревянный сосновый Лакированный</li>
+                    <li>Подушка - атлас</li>
+                    <li>Покрывало - атлас церковное</li>
+                    <li>Венок - 2 шт. искуственный Заказной</li>
+                    <li>Крест на могилу - сосновый</li>
+                    <li>Табличка на крест - стандарт</li>
+                    <li>Транспорт - морг, кладбище (крематорий), до места поминок</li>
+                    <li>Доставка в морг</li>
+                    <li>Оформление заказа на принадлежностей</li>
+                    <li>Оформление заказа на транспорт</li>
+                    <li>Сопровождение агентом, доставка ритуальных принадлежностей</li>
+                    <li>Организация похорон</li>
+                </ul>
+            </div>
+            <div class="menu_price">
+                <ul>
+                    <ol>Стоимость:</ol>
+                    <ol>49 790* рублей</ol>
+                </ul>
+            </div>
+        </div>
+        <div style="
+        display: flex;
+        margin-top: 1%;
+        justify-content: center;
+        ">
+            <span style="color: grey;">
+                * - В стоимость входят только ритуальные товары и ритуальные услуги,
+                кремация, погребение и услуги морга в стоимость не входят
+            </span>
+        </div>
+
+        <div class="what_menu" style="margin-top: 3%;">
+            <div class="what_btn">
+                <a href="">
+                    <button class="what_btn">Что делать в случае смерти близкого человека</button>
+                </a>
+            </div>
+            <div class="what_btn">
+                <a href="">
+                    <button class="what_btn">Куда звонить в случае смерти человека</button>
+                </a>
+            </div>
+            <div class="what_btn">
+                <a href="">
+                    <button class="what_btn">Какие документы понадобятся</button>
+                </a>
+            </div>
+            <div class="what_btn">
+                <a href="">
+                    <button class="what_btn">Кого не стоит допускать у документам</button>
+                </a>
+            </div>
+        </div>
+        <div class="what_menu">
+            <div class="what_btn">
+                <a href="">
+                    <button class="what_btn">Калькулятор похорон</button>
+                </a>
+            </div>
+            <div class="what_btn">
+                <a href="">
+                    <button class="what_btn">Захоронения</button>
+                </a>
+            </div>
+            <div class="what_btn">
+                <a href="">
+                    <button class="what_btn">Груз 200</button>
+                </a>
+            </div>
+            <div class="what_btn">
+                <a href="">
+                    <button class="what_btn">Льготы и пособия</button>
+                </a>
+            </div>
+        </div>
+        <div style="
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        ">
+            <h1 style="
+                color: darkblue;
+                font-size: 200%;
+
+                ">Справочная информация:
+            </h1>
+        </div>
+        
+        <div style="
+        display: flex;
+        margin-top: 2%;
+        justify-content: center;
+        ">
+            <span style="
+                font-size: 120%;">
+                МСК-Ритуал никогда не приезжает без вызова. Чтобы получить ритуальные услуги по 
+                официальным ценам нужно вызвать
+                <br>
+                сертифицированную службу МСК-Ритуал.
+                Организация оффицально занимается похоронными вопросами и работает на основании
+                <a href="https://www.consultant.ru/document/cons_doc_LAW_84602/" target="_blank">
+                    <button style="
+                        font-size: 100%;
+                        border: none;
+                        text-decoration: underline;
+                        color: #0014a8;
+                        background-color: white;
+                        ">ФЗ №8</button></a>
+            </span>
+        </div>
+        <div style="
+        display: flex;
+        justify-content: center;
+        margin-top: 1%;
+        ">
+            <h2>Преимущества обращения в МСК-Ритуал:</h2>
+        </div>
+        <div style="
+        display: flex;
+        justify-content: center;
+        margin-top: 1%;
+        ">
+            <div class="FAQ_list">
+                <ul>
+                    <li>
+                        Наличие оффицального сертификата;
+                    </li>
+                    <li>
+                        Высокие стандарты обслуживания клиентов;
+                    </li>
+                    <li>
+                        Опыт работы в Москве и МО более 25 лет;
+                    </li>
+                    <li>
+                        Работаем круглосуточно 24/7;
+                    </li>
+                    <li>
+                        Полный комплекс ритуальных услуг;
+                    </li>
+                    <li>
+                        Ритуальные принадлежности по низким ценам;
+                    </li>
+                    <li>
+                        Тактичные и деликатные работники с опытом работы;
+                    </li>
+                </ul>
+            </div>
+            <div class="FAQ_list">
+                <ul>
+                    <li>
+                        Удобная форма оплаты, организация похорон в рассрочку;
+                    </li>
+                    <li>
+                        Собственный автопарк катафалков;
+                    </li>
+                    <li>
+                        Фиксированные официальные цены;
+                    </li>
+                    <li>
+                        Работа по договору в соответствии с законом;
+                    </li>
+                    <li>
+                        Решение любых вопросов, связанных с похоронами;
+                    </li>
+                    <li>
+                        Защита от нелегальных похоронных агентов;
+                    </li>
+                    <li>
+                        Психологическая поддержка клиентов;
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div style="
+                display: flex;
+                justify-content: center;
+                margin-top: 2%;
+                ">
+                <h2>Почему выбирают именно нас?</h2>
+            </div>
+            <div class="FAQ_list" style="justify-content: center;">
+                <ul>
+                    <ol>
+                    Объективные причины востребованности услуг у "МСК-Ритуал"
+                    </ol>
+                    <ol>
+                        Грамотно продуманная ценовая политика без ущерба качества услуг.
+                        <br>
+                        Это крайне важно, ведь в сложной жизненной ситуации человеческое отношение и понимание превыше всего;
+                    </ol>
+                    <ol>
+                        Мы-не роботы и охотно поддерживаем клиентов психологически; 
+                    </ol>
+                    <ol>
+                        Обращаться к нам потелефону могут люди самого разного достатка.
+                        <br>
+                        Убедитесь в этом лично, ознакомиться с прайс-листом компании вы можете позвонив на горячую линию по телефону
+                        <br>
+                        +7-999-999-99-99, или бесплатно вызвать агента в любое удобное время и место;
+                    </ol>
+                    <ol>
+                        Искренне желаем вам как можно дольше не иметь повода для обращения к услугам наших сотрудников. Но когда настанет
+                        <br>
+                        тот день, когда вам всё же понадобиться помощь и поддержка, просто наберите указанный номер.
+                        <br>
+                        Обратившись к менеджеру, вы получите подробную информацию о порядке заказа, условиях предоставления услуг и порядке расчета стоимости.
+                    </ol>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="justify-content: center; display: flex;" id="form_to_scroll">
+        <form method="post" class="reg-form" style="display: block; width: 40%;">
+            <h2>Форма обратной связи:</h2>
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="name" class="form-label">Имя:</label>
+                <input type="text" id="name" name="name" class="reg-form__input form-control">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Номер телефона:</label>
+                <input type="text" name="phone" id="phone" class="reg-form__input form-control">
+            </div>
+            <div class="mb-3">
+                <label><input class="form-check-input" type="radio" name="agreement" value="True" style="border-color: #1C1C1C;">Согласие на обработку персональных данных:</label>
+            </div>
+            <div>
+                <input class="btn btn-success" type="submit" value="Отправить заявку" style="
+                    background-color: #0014a8; 
+                    color: white;"
+                    >
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<footer style="margin-top: 10%;">
+        <div style="
+        display: flex;
+        background-color: #0014a8;
+        width: 100%;
+        position: absolute;
+        "
+        >
+            <div style="
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;">
+                <div class="footer_section">
+                    <u href="" class="footer_button">
+                        <span class="footer_txt">
+                            some@mail.com
+                        </span>
+                    </u>
+                </div>
+
+                <div class="footer_section">
+                    <a href="https://yandex.ru/maps/-/CDwVjA3l" class="footer_button" target="_blank">
+                        <button class="footer_txt">
+                            8-я улица Соколиной Горы, 15к16
+                        </button>
+                    </a>
+                </div>
+
+                <div class="footer_section">
+                    <a href="/policy" class="footer_button">
+                        <button class="footer_txt">
+                            Политика конфиденциальности
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <ul class="policy">
+                    <span class="policy_text"> © 2024 Все права защищены.
+                    <br>
+                    Вся информация на сайте носит информационный и
+                    <br>
+                    рекламный характер и не является публичной офертой,
+                    <br>
+                    определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
