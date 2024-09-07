@@ -169,6 +169,12 @@
     #form_to_scroll{
         display: block;
     }
+    /* #btn_send{
+        display: none;
+    } */
+    #agreement:checked+#btn_send{
+        display: inline;
+    }
     /* BODY */
     </style>
     <title>
@@ -236,7 +242,7 @@
         </div>
 
         <div class="btn_header">
-            <a href="/skidki" class="inner_button_menu_group">
+            <a href="/discounts" class="inner_button_menu_group">
                 <button class="btn_text">Акции и скидки</button>
             </a>
         </div>
@@ -247,7 +253,7 @@
             </a>
         </div>
     </div>
-    </header>
+</header>
 <section>
     <div class="first_body_block">
         <div class="txt_first_body_block">
@@ -577,6 +583,7 @@
         <form method="post" class="reg-form" style="display: block; width: 40%;">
             <h2>Форма обратной связи:</h2>
             {% csrf_token %}
+            <!-- Доделать чекбокс -->
             <div class="mb-3">
                 <label for="name" class="form-label">Имя:</label>
                 <input type="text" id="name" name="name" class="reg-form__input form-control">
@@ -586,12 +593,17 @@
                 <input type="text" name="phone" id="phone" class="reg-form__input form-control">
             </div>
             <div class="mb-3">
-                <label><input class="form-check-input" type="radio" name="agreement" value="True" style="border-color: #1C1C1C;">Согласие на обработку персональных данных:</label>
+                <label><input id="agreement" type="checkbox" name="agreement" value="True" style="border-color: #1C1C1C;"> Согласие на обработку <a href="/policy">персональных данных</a></label>
             </div>
-            <div>
-                <input class="btn btn-success" type="submit" value="Отправить заявку" style="
+            <div class="mb-3">
+                <input type="submit" value="Отправить заявку" id="btn_send" style="
                     background-color: #0014a8; 
-                    color: white;"
+                    color: white;
+                    border-radius: 15px;
+                    padding: 2%;
+                    height: auto;
+                    width: auto;
+                    "
                     >
             </div>
         </form>

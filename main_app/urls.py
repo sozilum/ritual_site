@@ -1,8 +1,11 @@
 from django.urls import (path,
-                         include,
                          )
 from .views import (Homepage,
                     Policy,
+                    About,
+                    Discounts,
+                    Contacts,
+                    Personal_data,
                     )
 
 
@@ -14,5 +17,17 @@ urlpatterns = [
     path('policy',
          Policy.as_view(),
          name = 'policy',
+         ),
+    path('about',
+         About.as_view(),
+         name = 'about',
+         ),
+    path('discounts',
+         Discounts.as_view(),
+         name='discount',
+         ),
+    path('contacts',
+         Contacts.as_view(),
+         name = 'contacts',
          ),
 ]

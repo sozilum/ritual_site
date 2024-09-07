@@ -14,3 +14,4 @@ class Client(models.Model):
                              )
     agreement = models.BooleanField(default = False,
                                     )
+    send = models.BooleanField(default = True)
