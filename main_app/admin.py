@@ -7,6 +7,5 @@ class ClientAdmin(admin.ModelAdmin):
     list_display = [
         'name',
         'phone',
-        'agreement',
         'send',
     ]

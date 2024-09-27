@@ -12,6 +12,7 @@ from...serializer import ClientSerializer
 load_dotenv()
 bot = telebot.TeleBot(token=getenv('TOKEN'))
 
+
 class Command(BaseCommand):
     help = 'bot'
     
@@ -28,13 +29,14 @@ class Command(BaseCommand):
         while True:
             clients = Client.objects.filter(send = True)
             serialized_data = ClientSerializer(clients)
+            print(serialized_data.data, 'В телеграмм боте')
 
             for data in serialized_data.data:
-                bot.reply_to(message, 'Имя: {}, Номер:{}'.format(data['name'], data['phone']))
+                bot.send_message(message, 'Имя: {}, Номер:{}'.format(data['name'], data['phone']))
 
             clients.update(send = False)
             
             sleep(1)
     logger = telebot.logger
-    telebot.logger.setLevel(logging.DEBUG)
+    telebot.logger.setLevel(logging.INFO)
     bot.infinity_polling()

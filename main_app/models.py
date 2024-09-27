@@ -8,10 +8,8 @@ class Client(models.Model):
                             null = False,
                             blank = False,
                             )
-    phone = models.CharField(max_length = 50,
+    phone = models.CharField(max_length = 12,
                              null = False,
                              blank = False,
                              )
-    agreement = models.BooleanField(default = False,
-                                    )
     send = models.BooleanField(default = True)
